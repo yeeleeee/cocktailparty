@@ -1,0 +1,42 @@
+{
+	"time": ["Morning", "Afternoon", "Evening", "Crazy Time"],
+	"flavour": ["Sweet", "Spicy", "Minty", "Creamy", "Bitter"],
+	"emotion": ["Happy", "Sad"],
+	"ingredient": [{
+			"sugarsyrup": {
+				"name": "sugar syrup",
+				"portion": 20,
+				"label": "20%",
+				"color": "#FDEFDE",
+				"url": "url.url"
+			}
+		},
+		{
+			"sugar syrup": {
+				"name": "sugar syrup",
+				"portion": 20,
+				"label": "20%",
+				"color": "#FDEFDE",
+				"url": "url.url"
+			}
+		},
+		{
+			"sugar syrup": {
+				"name": "sugar syrup",
+				"portion": 20,
+				"label": "20%",
+				"color": "#FDEFDE",
+				"url": "url.url"
+			}
+		},
+		{
+			"sugar syrup": {
+				"name": "sugar syrup",
+				"portion": 20,
+				"label": "20%",
+				"color": "#FDEFDE",
+				"url": "url.url"
+			}
+		}
+	]
+}

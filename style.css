@@ -3,6 +3,7 @@
 body{
     color: white;
     background: linear-gradient(to bottom right, #372F45, #191142);
+    background-size: cover; 
 }
 /******************
 NAV BAR

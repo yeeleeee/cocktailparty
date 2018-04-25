@@ -1,13 +1,14 @@
-$(function(){
-  $("#doughnutChart").drawDoughnutChart([
-    { title: "Coconut",         value : 120,  color: "#2C3E50" },
-    { title: "Pineapple", value:  80,   color: "#FC4349" },
-    { title: "White Rum",      value:  70,   color: "#6DBCDB" },
-    { title: "Lime",        value : 50,   color: "#F7E248" },
-    { title: "Pineapple juice",        value : 40,   color: "#D7DADB" },
-    { title: "A Piece of Love",        value : 20,   color: "#FFF" }
-  ]);
-});
+//$(function(){
+//  $("#doughnutChart").drawDoughnutChart([
+//    { title: "Coconut",         value : 1.2,  color: "#2C3E50" },
+//    { title: "Pineapple", value:  8,   color: "#FC4349" },
+//    { title: "White Rum",      value:  7,   color: "#6DBCDB" },
+//    { title: "Lime",        value : 5.6,   color: "#F7E248" },
+//    { title: "Pineapple juice",        value : 5,   color: "#D7DADB" },
+////    { title: "A Piece of Love",        value : 5,   color: "#FFF" }
+//  ]);
+//});
+
 /*!
  * jquery.drawDoughnutChart.js
  * Version: 0.4.1(Beta)
@@ -259,3 +260,59 @@ $(function(){
     return $this;
   };
 })(jQuery);
+
+
+
+var ingredientData ;
+
+function loadData() {
+    ingredientData = [];
+    var tmpObj;
+    
+//    "name": "sugar syrup",
+//            "portion": 20%,
+//            "label": "20%",
+//            "color": "#FDEFDE"
+//            "url": "url.url"
+    
+    d3.json("data/filter.json", function(data) {
+        console.log(data);
+        
+        tmpObj = new Object();
+        
+        // do a for loop for each data.ingredient
+        
+        tmpObj.title = data.name;
+        tmpObj.value = data.portion;
+        tmpObj.label = data.label;
+        tmpObj.color = data.color;
+        tmpObj.url = data.url;
+        
+        ingredientData.push(tmpObj);
+//        console.log(ingredientData);
+        
+        
+    });
+}
+
+
+
+function drawChart() {
+    $("#doughnutChart").drawDoughnutChart(
+        
+    );
+}
+
+//$(function(){
+//  $("#doughnutChart").drawDoughnutChart([
+//    { title: "Coconut",         value : 1.2,  color: "#2C3E50" },
+//    { title: "Pineapple", value:  8,   color: "#FC4349" },
+//    { title: "White Rum",      value:  7,   color: "#6DBCDB" },
+//    { title: "Lime",        value : 5.6,   color: "#F7E248" },
+//    { title: "Pineapple juice",        value : 5,   color: "#D7DADB" },
+//
+//  ]);
+//});
+
+loadData();
+drawChart();
