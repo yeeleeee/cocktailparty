@@ -1,4 +1,6 @@
-[{
+[
+
+	{
 		"name": "Mojito",
 		"type": "Long Drink",
 		"flavour": ["Lime-y", "Minty"],
@@ -43,6 +45,9 @@
 			}
 		]
 	},
+
+    
+    
 	{
 		"name": "Pina Colada",
 		"type": "Long Drink",
@@ -73,5 +78,73 @@
 				"url": "icons/pineapple.png"
 			}
 		]
+	},
+
+    
+    
+    
+    
+	{
+		"name": "Screwdriver",
+		"type": "Long Drink",
+		"flavour": ["Juice"],
+		"strength": "Light",
+		"emotion": ["Emotion3", "Emotion4"],
+		"time": "Morning",
+		"ck_img": "uurl",
+		"ingredient": [{
+				"name": "Vodka",
+				"portion": 34,
+				"label": "33%",
+				"color": "#f5f5f5",
+				"url": "icons/whiterum.png"
+			},
+			{
+				"name": "Orange Juice",
+				"portion": 66,
+				"label": "66%",
+				"color": "#FF7900",
+				"url": "icons/orange.png"
+			}
+		]
+	},
+
+  
+    
+    
+	{
+		"name": "Rum and Coke",
+		"type": "Long Drink",
+		"flavour": ["Sweet"],
+		"strength": "Medium",
+		"emotion": ["Emotion3", "Emotion4"],
+		"time": "Noon",
+		"ck_img": "uurl",
+		"ingredient": [{
+				"name": "White Rum",
+				"portion": 28,
+				"label": "28%",
+				"color": "#f5f5f5",
+				"url": "icons/whiterum.png"
+			},
+			{
+				"name": "Cola",
+				"portion": 67,
+				"label": "67%",
+				"color": "#1576CA",
+				"url": "icons/cola.png"
+			},
+			{
+				"name": "Lime Juice",
+				"portion": 5,
+				"label": "5%",
+				"color": "#C0CD4D",
+				"url": "icons/lemon.png"
+			}
+
+		]
 	}
+    
+    
+
 ]
