@@ -1,29 +1,51 @@
-//go here for local hosting
-////http://localhost:8000/donut.html
+
+const p = d3.json("data/ingredient.json")
+var name = "hahaha"
+p.then((res)=>{
+    var data = res;
+    var name = "Pina Colada";
+    selected = new Object();
+    var num_of_ingre;
+    
+
+    for (i = 0;i<data.length;i++)
+        {
+        if (data[i].name == name)
+            {
+                selected = Object.assign(data[i]);
+                num_of_ingre = selected.ingredient.length;
+               
+            }
+        }
+//     console.log(selected.ingredient[0])
+    var components = []
+
+    for (j=0;j<num_of_ingre;j++){
+//        console.log(selected.ingredient[j]);
+        tmpObj = new Object();
+        tmpObj.title = selected.ingredient[j].name;
+        tmpObj.value = selected.ingredient[j].portion;
+        tmpObj.color = selected.ingredient[j].color;
+        components.push(tmpObj)
+    }
+    console.log(components)
+    
+    $(function(){
+  $("#doughnutChart").drawDoughnutChart(components);
+});
+    
+    
+    
+       }
+      )
+
 
 
 //$(function(){
-//  $("#doughnutChart").drawDoughnutChart([
-//    { title: "Coconut",         value : 1.2,  color: "#2C3E50" },
-//    { title: "Pineapple", value:  8,   color: "#FC4349" },
-//    { title: "White Rum",      value:  7,   color: "#6DBCDB" },
-//    { title: "Lime",        value : 5.6,   color: "#F7E248" },
-//    { title: "Pineapple juice",        value : 5,   color: "#D7DADB" },
-////    { title: "A Piece of Love",        value : 5,   color: "#FFF" }
-//  ]);
+//  $("#doughnutChart").drawDoughnutChart(components);
 //});
 
-/*!
- * jquery.drawDoughnutChart.js
- * Version: 0.4.1(Beta)
- * Inspired by Chart.js(http://www.chartjs.org/)
- *
- * Copyright 2014 hiro
- * https://github.com/githiro/drawDoughnutChart
- * Released under the MIT license.
- * 
- */
-(function($, undefined) {
+;(function($, undefined) {
   $.fn.drawDoughnutChart = function(data, options) {
     var $this = this,
       W = $this.width(),
@@ -49,17 +71,7 @@
         tipOffsetY: -45,
         tipClass: "doughnutTip",
         summaryClass: "doughnutSummary",
-          //
-          //
-          //
-          //
-          
-        summaryTitle: "Cocktail name here",
-          //
-          //
-          //
-          //
-          //
+        summaryTitle: name,
         summaryTitleClass: "doughnutSummaryTitle",
         summaryNumberClass: "doughnutSummaryNumber",
         beforeDraw: function() {  },
@@ -171,7 +183,7 @@
         ];
         cmd = cmd.join(' ');
         return cmd;
-    }
+    };
     function pathMouseEnter(e) {
       var order = $(this).data().order;
       $tip.text(data[order].title + ": " + data[order].value)
@@ -264,65 +276,3 @@
     return $this;
   };
 })(jQuery);
-
-
-
-var ingredientData ;
-
-function loadData() {
-    ingredientData = [];
-    var tmpObj;
-    
-//    "name": "sugar syrup",
-//            "portion": 20%,
-//            "label": "20%",
-//            "color": "#FDEFDE"
-//            "url": "url.url"
-    
-    d3.json("data/filter.json", function(data) {
-        console.log(data);
-        
-        tmpObj = new Object();
-        
-        // do a for loop for each data.ingredient
-//        var iglist = data["ingredient"]
-//        for (i=0;i<iglist.length;i++){
-//            tmpObj.title.push(iglist.name);
-//        }
-        tmpObj.title = data.name;
-        tmpObj.value = data.portion;
-        tmpObj.label = data.label;
-        tmpObj.color = data.color;
-        tmpObj.url = data.url;
-        
-        ingredientData.push(tmpObj);
-              
-    });
-}
-//write a looop here and console.log
-
-//for (i=0;i<ingredientData.length;i++){
-//    console.log(ingredientData[i])
-//}
-
-//ingredientData.title
-
-//function drawChart() {
-//    $("#doughnutChart").drawDoughnutChart(
-//        
-//    );
-//}
-
-$(function(){
-  $("#doughnutChart").drawDoughnutChart([
-    { title: "Tokyo",         value : 120,  color: "#2C3E50" },
-    { title: "San Francisco", value:  80,   color: "#FC4349" },
-    { title: "New York",      value:  70,   color: "#6DBCDB" },
-    { title: "London",        value : 50,   color: "#F7E248" },
-    { title: "Sydney",        value : 40,   color: "#D7DADB" },
-    { title: "Berlin",        value : 20,   color: "#FFF" }
-  ]);
-});
-
-loadData();
-drawChart();
