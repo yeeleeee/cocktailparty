@@ -1,5 +1,5 @@
 
-const p = d3.json("data/ingredient.json")
+const p = d3.json("../data/ingredient.json")
 var name = "hahaha"
 p.then((res)=>{
     var data = res;
