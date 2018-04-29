@@ -8,6 +8,7 @@
 		"emotion": ["Emotion1", "Emotion2"],
 		"time": "Morning",
 		"ck_img": "uurl",
+                "explanation":"",
 		"ingredient": [{
 				"name": "White Rum",
 				"portion": 28,
@@ -56,6 +57,7 @@
 		"emotion": ["Emotion3", "Emotion4"],
 		"time": "Morning",
 		"ck_img": "uurl",
+       	        "explanation":"",
 		"ingredient": [{
 				"name": "Sugar syrup",
 				"portion": 20,
@@ -92,6 +94,7 @@
 		"emotion": ["Emotion3", "Emotion4"],
 		"time": "Morning",
 		"ck_img": "uurl",
+        	"explanation":"",
 		"ingredient": [{
 				"name": "Vodka",
 				"portion": 34,
@@ -120,6 +123,7 @@
 		"emotion": ["Emotion3", "Emotion4"],
 		"time": "Noon",
 		"ck_img": "uurl",
+                "explanation":"",
 		"ingredient": [{
 				"name": "White Rum",
 				"portion": 28,
