@@ -7,7 +7,7 @@
 		"strength": "Light",
 		"emotion": ["Sing", "Unique"],
 		"time": ["Morning", "afternoon"],
-		"ck_img": "uurl",
+		"ck_img": "cocktails/Mojito.png",
 		"explanation": "'Sometimes, all you need is Mojito.'",
 		"ingredient": [{
 				"name": "White Rum",
@@ -54,7 +54,7 @@
 		"strength": "Medium",
 		"emotion": ["Sing", "Unique"],
 		"time": ["Morning", "Afternoon", "Evening"],
-		"ck_img": "uurl",
+		"ck_img": "cocktails/Sex on the Beach.png",
 		"explanation": "Toes in the sand and cocktail in hand... If you can't do both you can do one at least :P",
 		"ingredient": [{
 				"name": "Vodka",
@@ -94,7 +94,7 @@
 		"strength": "Light",
 		"emotion": ["crazy", "cry"],
 		"time": ["Morning", "Crazytime"],
-		"ck_img": "uurl",
+		"ck_img": "cocktails/Screwdriver.png",
 		"explanation": "'I read the instructions manual and it said I needed a large screwdriver. So I got out the vodka and orange juice, but eveerything after that remains a complete mystery...'",
 		"ingredient": [{
 				"name": "Vodka",
@@ -120,7 +120,7 @@
 		"strength": "Medium",
 		"emotion": ["Sing", "Crazy"],
 		"time": "Morning",
-		"ck_img": "uurl",
+		"ck_img": "cocktails/LongIsland.png",
 		"explanation": "We only recommend you to drink tea, if it's from long island. ",
 		"ingredient": [{
 				"name": "Sugar syrup",
@@ -166,7 +166,7 @@
 		"strength": "Medium",
 		"emotion": ["Crazy", "Sing", "Cry"],
 		"time": ["Morning", "Afternoon", "Evening"],
-		"ck_img": "uurl",
+		"ck_img": "cocktails/White Russian.png",
 		"explanation": "'A one-stop source of alcohol, sugar, caffeine, and milk fat, the only legal substance it lacks is nicotine.' -",
 		"ingredient": [{
 				"name": "Vodka",
@@ -199,7 +199,7 @@
 		"strength": "Light",
 		"emotion": ["Crazy", "Unique"],
 		"time": "Morning",
-		"ck_img": "uurl",
+		"ck_img": "cocktails/Bloody Mary.png",
 		"explanation": "Bloody Mary counts as a vegetable, right?",
 		"ingredient": [{
 				"name": "Tomato Juice",
@@ -261,7 +261,7 @@
 		"strength": "Medium",
 		"emotion": ["Crazy", "Unique", "Sing"],
 		"time": ["Afternoon", "Evening"],
-		"ck_img": "uurl",
+		"ck_img": "cocktails/Rum and Coke.png",
 		"explanation": "Once you drink this, you will find your coke taste funny without rum in it.",
 		"ingredient": [{
 				"name": "Coke",
@@ -294,7 +294,7 @@
 		"strength": "Strong",
 		"emotion": ["Crazy", "Unique"],
 		"time": ["Evening", "Crazytime"],
-		"ck_img": "uurl",
+		"ck_img": "cocktails/The Blow Job.png",
 		"explanation": "You should have your hands held behind your back. Do it responsibly!",
 		"ingredient": [{
 				"name": "Vodka",
@@ -329,7 +329,7 @@
 		"strength": "Strong",
 		"emotion": ["Cry", "Sing"],
 		"time": ["Afternoon", "Evening"],
-		"ck_img": "uurl",
+		"ck_img": "cocktails/Gin Tonic.png",
 		"explanation": "When life hands you lemons, make a gin and tonic!",
 		"ingredient": [{
 				"name": "Gin",
@@ -355,7 +355,7 @@
 		"strength": "Light",
 		"emotion": ["Sing"],
 		"time": ["Morning", "Afternoon", "Evening"],
-		"ck_img": "uurl",
+		"ck_img": "cocktails/Pina Colada.png",
 		"explanation": "You know, life is about balance. The good and the bad. The highs and the lows. The pina and the colada. ",
 		"ingredient": [{
 				"name": "White Rum",
@@ -388,7 +388,7 @@
 		"strength": "Strong",
 		"emotion": ["Cry", "Crazy"],
 		"time": ["Afternoon", "Evening"],
-		"ck_img": "uurl",
+		"ck_img": "cocktails/Manhattan.png",
 		"explanation": "Too much of almost anything is bad, but too much of a manhattan is barely enough.",
 		"ingredient": [{
 				"name": "Whisky",
@@ -421,7 +421,7 @@
 		"strength": "Light",
 		"emotion": ["Sing", "Crazy", "Unique"],
 		"time": ["Morning", "Afternoon"],
-		"ck_img": "uurl",
+		"ck_img": "cocktails/Blue Margarita.png",
 		"explanation": "Margaritas make us sound smarter, dance better, feel amazing, and look like Shakira. Therefore, margaritas are a superfood. ",
 		"ingredient": [{
 				"name": "Tequila",
@@ -475,7 +475,7 @@
 		"strength": "Medium",
 		"emotion": ["Sing", "Unique"],
 		"time": ["Afternoon", "Evening"],
-		"ck_img": "uurl",
+		"ck_img": "cocktails/Tropical Dream.png",
 		"explanation": "Toes in the sand and cocktail in hand... if you can't do both you can do one at least :P",
 		"ingredient": [{
 				"name": "White Rum",
@@ -529,7 +529,7 @@
 		"strength": "Strong",
 		"emotion": ["Cry", "Unique"],
 		"time": "Evening",
-		"ck_img": "uurl",
+		"ck_img": "cocktails/Caipiriha.png",
 		"explanation": "The Brazilian cocktail, once used to cure symptoms of the Spanish Flu, is recommendable to consume for 'medical purposes'",
 		"ingredient": [{
 				"name": "Cachaca",
@@ -562,7 +562,7 @@
 		"strength": "Strong",
 		"emotion": ["Cry", "Crazy"],
 		"time": ["Evening", "Afternoon"],
-		"ck_img": "uurl",
+		"ck_img": "cocktails/Alexander.png",
 		"explanation": "'I meditate, I do yoga dn I have a lot of friends who are healers... And if none of that works, I go buy a chocolate bar and a bottle of cognac.'",
 		"ingredient": [{
 				"name": "Cognac",
