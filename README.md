@@ -17,6 +17,11 @@ and an example example
 
 Here we will put link to our [website](www.google.com).
 
+## Libraries
+* **D3.js** - *Data visualization*
+* **Skrollr.js** - *Create snimation along with viewpoint changes*
+* **Vanilla-Tilt.js** - *Create tile animation when hovering*
+
 ## Authors
 
 * **Yejin** - *structure and backup* 
