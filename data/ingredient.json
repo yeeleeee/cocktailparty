@@ -8,7 +8,7 @@
 		"emotion": ["Sing", "Unique"],
 		"time": ["Morning", "afternoon"],
 		"ck_img": "cocktails/Mojito.png",
-		"explanation": "'Sometimes, all you need is Mojito.'",
+		"explanation": "Sometimes, all you <br> need is Mojito.",
 		"ingredient": [{
 				"name": "White Rum",
 				"portion": 28,
@@ -21,7 +21,7 @@
 				"portion": 5,
 				"label": "5%",
 				"color": "#FDAAB8",
-				"url": "icons/sugar.png"
+				"url": "icons/syrup.png"
 			},
 			{
 				"name": "Lime Juice",
@@ -42,7 +42,7 @@
 				"portion": 5,
 				"label": "6 pieces",
 				"color": "#00CD5E",
-				"url": "icons/mint_leaf.png"
+				"url": "icons/mint.png"
 			}
 		]
 	},
@@ -54,7 +54,7 @@
 		"strength": "Medium",
 		"emotion": ["Sing", "Unique"],
 		"time": ["Morning", "Afternoon", "Evening"],
-		"ck_img": "cocktails/Sex on the Beach.png",
+		"ck_img": "cocktails/Sex On The Beach.png",
 		"explanation": "Toes in the sand and cocktail in hand... If you can't do both you can do one at least :P",
 		"ingredient": [{
 				"name": "Vodka",
@@ -120,14 +120,14 @@
 		"strength": "Medium",
 		"emotion": ["Sing", "Crazy"],
 		"time": "Morning",
-		"ck_img": "cocktails/LongIsland.png",
+		"ck_img": "cocktails/Long Island Tea.png",
 		"explanation": "We only recommend you to drink tea, if it's from long island. ",
 		"ingredient": [{
 				"name": "Sugar syrup",
 				"portion": 4,
 				"label": "4%",
 				"color": "#FDAAB8",
-				"url": "icons/sugar.png"
+				"url": "icons/syrup.png"
 			},
 			{
 				"name": "Lemon Juice",
@@ -155,7 +155,7 @@
 				"portion": 24,
 				"label": "24%",
 				"color": "#FF28B3",
-				"url": "icons/rum.png"
+				"url": "icons/whiterum.png"
 			}
 		]
 	},
@@ -167,7 +167,7 @@
 		"emotion": ["Crazy", "Sing", "Cry"],
 		"time": ["Morning", "Afternoon", "Evening"],
 		"ck_img": "cocktails/White Russian.png",
-		"explanation": "'A one-stop source of alcohol, sugar, caffeine, and milk fat, the only legal substance it lacks is nicotine.' -",
+		"explanation": "'A one-stop source of alcohol, sugar, caffeine, and milk fat, the only legal substance it lacks is nicotine.' ",
 		"ingredient": [{
 				"name": "Vodka",
 				"portion": 37.5,
@@ -255,7 +255,7 @@
 
 
 	{
-		"name": "Rum Coke",
+		"name": "Rum and Coke",
 		"type": "Short Drink",
 		"flavour": ["Sweet", "Fresh"],
 		"strength": "Medium",
@@ -275,7 +275,7 @@
 				"portion": 28,
 				"label": "28%",
 				"color": "#FF28B3",
-				"url": "icons/rum.png"
+				"url": "icons/whiterum.png"
 			},
 			{
 				"name": "Lime Juce (fresh!)",
@@ -294,7 +294,7 @@
 		"strength": "Strong",
 		"emotion": ["Crazy", "Unique"],
 		"time": ["Evening", "Crazytime"],
-		"ck_img": "cocktails/The Blow Job.png",
+		"ck_img": "cocktails/The 'blowjob'.png",
 		"explanation": "You should have your hands held behind your back. Do it responsibly!",
 		"ingredient": [{
 				"name": "Vodka",
@@ -329,7 +329,7 @@
 		"strength": "Strong",
 		"emotion": ["Cry", "Sing"],
 		"time": ["Afternoon", "Evening"],
-		"ck_img": "cocktails/Gin Tonic.png",
+		"ck_img": "cocktails/Gin and Tonic.png",
 		"explanation": "When life hands you lemons, make a gin and tonic!",
 		"ingredient": [{
 				"name": "Gin",
@@ -362,14 +362,14 @@
 				"portion": 20,
 				"label": "20%",
 				"color": "#FF28B3",
-				"url": "icons/rum.png"
+				"url": "icons/whiterum.png"
 			},
 			{
 				"name": "Coconut Milk",
 				"portion": 20,
 				"label": "20%",
 				"color": "#FFFFFF",
-				"url": "icons/coconutmilk.png"
+				"url": "icons/coconut.png"
 			},
 			{
 				"name": "Pineapple Juice",
@@ -475,14 +475,14 @@
 		"strength": "Medium",
 		"emotion": ["Sing", "Unique"],
 		"time": ["Afternoon", "Evening"],
-		"ck_img": "cocktails/Tropical Dream.png",
+		"ck_img": "cocktails/TropicalDream.png",
 		"explanation": "Toes in the sand and cocktail in hand... if you can't do both you can do one at least :P",
 		"ingredient": [{
 				"name": "White Rum",
 				"portion": 25,
 				"label": "25%",
 				"color": "#FF28B3",
-				"url": "icons/rum.png"
+				"url": "icons/whiterum.png"
 			},
 			{
 				"name": "Mint Liqueur",
@@ -560,7 +560,7 @@
 		"type": "Short Drink",
 		"flavour": ["Sweet", "Chocolatey"],
 		"strength": "Strong",
-		"emotion": ["Cry", "Crazy"],
+		"emotion": ["Cry", "Crazy","Unique"],
 		"time": ["Evening", "Afternoon"],
 		"ck_img": "cocktails/Alexander.png",
 		"explanation": "'I meditate, I do yoga dn I have a lot of friends who are healers... And if none of that works, I go buy a chocolate bar and a bottle of cognac.'",

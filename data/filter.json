@@ -1,49 +1,5 @@
-<<<<<<< HEAD
-{
-	"time": ["Morning", "Afternoon", "Evening", "Crazy Time"],
-	"flavour": ["Sweet", "Spicy", "Minty", "Creamy", "Bitter"],
-	"emotion": ["Happy", "Sad"],
-	"ingredient": [{
-			"sugarsyrup": {
-				"name": "sugar syrup",
-				"portion": 20,
-				"label": "20%",
-				"color": "#FDEFDE",
-				"url": "url.url"
-			}
-		},
-		{
-			"sugar syrup": {
-				"name": "sugar syrup",
-				"portion": 20,
-				"label": "20%",
-				"color": "#FDEFDE",
-				"url": "url.url"
-			}
-		},
-		{
-			"sugar syrup": {
-				"name": "sugar syrup",
-				"portion": 20,
-				"label": "20%",
-				"color": "#FDEFDE",
-				"url": "url.url"
-			}
-		},
-		{
-			"sugar syrup": {
-				"name": "sugar syrup",
-				"portion": 20,
-				"label": "20%",
-				"color": "#FDEFDE",
-				"url": "url.url"
-			}
-		}
-	]
-=======
 { 
-    "time": ["Morning","Afternoon","Evening","Crazy Time"],
-    "flavour":["Sweet","Spicy","Minty","Creamy","Bitter","Lime-y"],
-    "emotion":["Emotion1","Emotion2","Emotion3","Emotion4"]
->>>>>>> c8c633ede4e5e3438847eb72515163617fa546f4
+    "time": ["Morning","Afternoon","Evening","CrazyTime"],
+    "flavour":["Sweet","Spicy","Minty","Creamy","Bitter","Lime-y","Juice"],
+    "emotion":["Cry","Crazy","Sing","Unique"]
 }

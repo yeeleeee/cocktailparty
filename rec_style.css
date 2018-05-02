@@ -1,0 +1,291 @@
+/*
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+*/
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Courgette|Lobster+Two|Abril+Fatface|Lobster|Shrikhand');
+
+
+body{
+    
+    font-family: Quicksand;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+/*********************
+title
+*/
+
+h1,.h1{
+    color: white;
+    font-family: Quicksand;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  
+}
+
+h2,.h2{
+    font-size: 2em;
+    font-weight: 300;
+}
+
+/*********************
+button text
+*/
+h3,.h3{
+    font-family: Quicksand;
+    font-size: 1.4em;
+    font-weight: 900;
+    margin-top: 7px;
+    color: white;
+}
+
+
+
+
+/*********************
+tag text
+*/
+p{
+    color:white; 
+    font-size: 1.2em; 
+    letter-spacing: 1px;
+    font-weight: 300;
+    height: 12px;
+}
+
+
+
+.container{
+    margin-left:0px;
+    margin-right: 0px;
+    position: relative;
+    width:100%;
+    
+    
+
+}
+
+.container img {
+    opacity: 90%;
+    width: 100%;   
+    position: absolute;
+}
+
+#canvas{
+    z-index: -20;
+}
+#bg_img{
+    z-index: -99;
+}
+
+#cocktail{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+/*    margin-left: 20%;*/
+/*    position:relative;*/
+    z-index: 1;
+    max-width:15%;
+    height:auto;
+}
+
+
+#canvas{
+    z-index: 999;
+    float: left;
+}
+#bg_panel{
+    text-align: center;
+    position: absolute;
+    margin-left: 70%;
+/*    padding-left: 20px;*/
+    padding-top: 10px;
+/*    border: 1px;*/
+/*    border-left: 20px;*/
+    border-left-color: white;
+    background-color:#443D6C;
+    width: 30%;
+    height:800px;
+    z-index: 0;
+    
+}
+
+.segmented {
+  padding: 3px; 
+  margin-bottom: 10px;
+}
+
+.segmented input[type=radio] {
+   display: none;
+}
+
+.segmented label {
+  color:white;
+  font-family: open sans;
+  font-size:12px;
+  border-radius: 5px; 
+  padding: 4px 16px;
+  margin-right: 4px;
+  margin-bottom: 10px;
+  background: #7c7897;
+  
+}
+.segmented label:hover {
+  cursor: pointer;
+  
+}
+
+
+
+.segmented input:checked + label {
+  font-size:12px;
+  border-radius: 5px;  
+  background: #263052;
+}
+
+.segmented {
+  padding: 0px;   
+}
+
+.segmented2 input[type=radio] {
+   display: none;
+}
+
+.segmented2 label {
+  
+
+  font-size:12px;
+  border-radius: 5px; 
+  padding: 4px 16px;
+  margin-right: 4px;
+  margin-bottom: 10px;
+/*  background: #000000;*/
+  cursor: pointer;
+}
+
+
+
+.segmented2 input:checked + label>img {
+  font-size:12px;
+  border-radius: 10px;  
+  background-size: 250%;
+  background-color: #273151;
+
+}
+
+
+#filter_submit{
+    width:300px;
+    height:40px;
+    position: absolute;
+    border-radius: 5px;
+    border:none;
+
+    margin-top: 52px;
+    margin-left: -145px;
+    
+    background-color: #f7394a;
+    cursor: pointer;
+}
+
+#filter_submit:hover{
+    cursor: pointer;
+}
+
+
+figure {
+  height: 500px;
+  width: 500px;
+}
+
+.outline {
+  stroke: white;
+  stroke-width: 1;
+}
+
+.second {
+  stroke: white;
+  stroke-width: 2;
+}
+
+.hour {
+  stroke: white;
+  stroke-width: 0;
+}
+
+.second-hand {
+  stroke: white;
+  stroke-width: 3;
+}
+
+.minute-hand {
+  stroke: white;
+  stroke-width: 8;
+  stroke-linecap: round;
+}
+
+.hour-hand {
+    
+  stroke: white;
+  stroke-width: 6;
+  stroke-linecap: round;
+}
+
+
+
+#clock{
+    z-index: 1000
+}
+
+#linkbtn{
+    position: absolute;
+    margin-left:41%;
+    margin-top: 40%;
+    width:140px;
+    height:50px;
+/*    border;*/
+    border-color: white;
+    background-color: transparent; 
+/*    background-color: #f7394a;*/
+    border-radius: 50px;
+    opacity: 0.0;
+/*    display: none;*/
+    
+
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+/*  padding: 20px;*/
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+
+}
+
+#linkbtn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+
+#linkbtn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#linkbtn:hover span {
+  padding-right: 30px;
+}
+
+#linkbtn:hover span:after {
+  opacity: 1;
+  right: 0;
+}

@@ -1,1 +1,84 @@
-<ddeded>
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>recommendation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!--    <link rel="stylesheet" href="style.css"> -->
+    <link rel ="stylesheet" href="rec_style.css">
+    
+      
+  </head>
+    
+  <body>
+      <script src="https://d3js.org/d3.v5.min.js"></script>
+      <script type="application/javascript" src="reco_d3.js"></script>
+        
+        <div class = "container">
+            <img src='bg.jpg' id='bg_img'/>
+            <button id = "linkbtn"><span>View Details</span></button>
+     
+            <div id="bg_panel">
+<!--                <figure class="clock"></figure>-->
+                <h1>Select the time you want to drink</h1>
+                <div class="clock" style="height: 230px;"></div>
+    
+                <h1>What flavour do you like?</h1>
+                <div class="segmented">
+                  <input type="radio" name="seg-1" value="Sweet" id="seg-Organisation">
+                  <label for="seg-Organisation" data-tilt data-tilt-scale="1.1"><p>sweet</p></label>
+                  <input type="radio" name="seg-1" value="Juicy" id="seg-Users">
+                  <label for="seg-Users" data-tilt data-tilt-scale="1.1"><p>juicy</p></label>
+                  <input type="radio" name="seg-1" value="Bitter" id="seg-Units">
+                  <label for="seg-Units" data-tilt data-tilt-scale="1.1"><p>bitter</p></label>
+                  <input type="radio" name="seg-1" value="Minty" id="seg-minty">
+                  <label for="seg-minty" data-tilt data-tilt-scale="1.1"><p>minty</p></label>
+                  <input type="radio" name="seg-1" value="Lime-y" id="seg-limey">
+                  <label for="seg-limey" data-tilt data-tilt-scale="1.1"><p>lime-y</p></label>
+                  <input type="radio" name="seg-1" value="Creamy" id="seg-creamy">
+                  <label for="seg-creamy" data-tilt data-tilt-scale="1.1"><p>creamy</p></label>
+                  <input type="radio" name="seg-1" value="Chocolatey" id="seg-chocolatey">
+                  <label for="seg-chocolatey" data-tilt data-tilt-scale="1.1"><p>chocolatey</p></label>
+                
+                </div>
+                <h1>How do you feel now?</h1>
+                <div class="segmented2">
+                  <input type="radio" name="seg-2" value="Sing" id="seg-emotion1">
+                    <label for="seg-emotion1"><img data-tilt data-tilt-scale="1.3" src="emotion/sing.png" style=" width:50px;position:absolute;margin-left:-80px;"></label>
+<!--
+                    <svg height="52" width="52" style="position: absolute;">
+                    <circle cx="25" cy="25" r="24" stroke="white" stroke-width="1" fill = "none"  />
+                    </svg></label>
+-->
+                  <input type="radio" name="seg-2" value="Cry" id="seg-emotion2">
+                  <label for="seg-emotion2"><img data-tilt data-tilt-scale="1.3" src="emotion/cry.png" 
+                  style="width:50px;position:absolute;margin-left:-40px;"></label>
+                  <input type="radio" name="seg-2" value="Crazy" id="seg-emotion3">
+                  <label for="seg-emotion3"><img data-tilt data-tilt-scale="1.3" src="emotion/crazy.png" 
+                  style="width:50px;position:absolute;margin-left:0px;"></label>
+                  <input type="radio" name="seg-2" value="Unique" id="seg-emotion4">
+                  <label for="seg-emotion4"><img data-tilt data-tilt-scale="1.3" src="emotion/unique.png" 
+                  style="width:50px;position:absolute;margin-left:40px;"></label>
+                
+                </div>
+                
+                <button id = "filter_submit" data-tilt data-tilt-scale="1.05"><h3>Give me a Drink!</h3></button>
+            </div>
+            
+            
+            
+            
+        </div>
+  
+ <script type="application/json" src="data/filter.json"></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js'></script>
+  <script type="application/javascript" src="reco_d3.js"></script>
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+      <script src="d3.button.js"></script>
+
+  </body>
+ 
+  
+</html>

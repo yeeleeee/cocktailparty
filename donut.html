@@ -12,7 +12,7 @@ https://stackoverflow.com/questions/4852017/how-to-initialize-an-arrays-length-i
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cocktail party</title>
     
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     
 <!--    ***************for donut-->
@@ -31,19 +31,32 @@ https://stackoverflow.com/questions/4852017/how-to-initialize-an-arrays-length-i
 -->
 </head>
 <body>
-<div class="margin">
-    <nav>
-        <ul>
-            <li><a href=index.html>home</a></li>
-            <li><a href="about.html">about</a></li>
-        </ul>
-    </nav>
-</div>
+    <div class="margin">
+        
+    </div>
 
+    <div class="donutbox container">
+        <div class="row">
 
+           <!--donut chart-->
+            <div class="col-lg-6 donutwrap"> 
+                <div id="doughnutChart" class="chart"></div>
+                <div id="picture-part"></div>
+            </div>
 
-<div id="doughnutChart" class="chart"></div>
-
+            <!--text area--> 
+            <div class="col-lg-6 ingre">
+                <div id="ingredient-part" >
+                    <ul id="show-ingredient">
+                        <script type="text/javascript">
+                        </script>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
 
 
 

@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+body{
+    color: white;
+    background: linear-gradient(to bottom right, #372F45, #191142);
+}
+/******************
+NAV BAR
+*/
+ul{
+    padding-left: 0;
+    margin-top: 2vw;
+}
+
+li {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+li:last-of-type {
+    margin-left: 3vw;
+/*  float: right;*/
+}
+
+a{
+    font-weight: 700;
+    color: white;
+}
+a:hover{
+    color: #EB676C;
+}
+
+
+/*********************
+TYPOGRAPHY
+no direct text in div plz
+1rem = 10px
+1em = 10px in xs devices
+*/
+
+body{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+h1,.h1{
+    font-size: 3em;
+    font-weight: 700;
+}
+
+h2,.h2{
+    font-size: 2em;
+    font-weight: 300;
+}
+
+h3,.h3{
+    font-size: 1.4em;
+    font-weight: 700;
+}
+p{
+    font-size: 1.4em;
+    font-weight: 300;
+}
+
+
+
+
+/*********************
+COLOR PALETTE
+*/
+.icon{
+    width: 180px;
+    height: 10vw;
+}
+.icons{
+    width: 65px;
+    height: 10vw;
+    display: inline-block;
+}
+#colorgrad{
+    background: linear-gradient(to bottom right, #FF966F, #EC676C, #873E58, #161041 );
+}
+#color1{
+    background-color: #FF956F;
+}
+#color2{
+    background-color: #EB676C;
+}
+#color3{
+    background-color: #854E6C;
+}
+#color4{
+    background-color: #443D6C;
+}
+
+
+
+
+
+/*********************
+MARGIN
+use any with given margin (2vw)
+*/
+.margin{
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************************
+MEDIA QUERIES
+Extra small devices (phones, less than 768px) - No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, @sm and up) */
+@media (min-width: 768px) { 
+    body{
+       font-size: 1.2rem;} 
+}
+/* Medium devices (desktops, @md and up) */
+@media (min-width: 992px) { 
+    body{
+       font-size: 1.4rem;}
+}
+/* Large devices (large desktops, @lg and up) */
+@media (min-width: 1200px) { 
+    body{
+       font-size: 1.6rem;}
+}

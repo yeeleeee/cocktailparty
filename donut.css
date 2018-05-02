@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 /*
 body {
   background: #222428;
@@ -21,7 +21,7 @@ body {
   border-radius: 1px;
   background: rgba(0,0,0,.8);
   color: #ddd;
-  font-size: 17px;
+  font-size: 15px;
   text-shadow: 0 1px 0 #000;
   text-transform: uppercase;
   text-align: center;
@@ -52,11 +52,13 @@ body {
   cursor: default;
 }
 .doughnutSummaryTitle {
+
+  font-family: Quicksand;
   position: absolute;
-  top: 50%;
-  width: 100%;
-  margin-top: -27%;
-  font-size: 22px;
+  top: -100%;
+  display: block;
+/*  margin-top: -135%;*/
+  font-size: 28px;
   letter-spacing: .06em;
 }
 .doughnutSummaryNumber {
@@ -65,6 +67,6 @@ body {
   top: 50%;
   width: 100%;
   margin-top: -15%;
-  font-size: 55px;
+  font-size: 50px;
 }
 .chart path:hover { opacity: 0.65; }

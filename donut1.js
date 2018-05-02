@@ -1,12 +1,19 @@
-
 const p = d3.json("../data/ingredient.json")
-var name = "hahaha"
+var components = [];
+var textElems = [];
+
+
+
 p.then((res)=>{
     var data = res;
-    var name = "Pina Colada";
+    
     selected = new Object();
     var num_of_ingre;
     
+    var a = location.href;
+    name = decodeURI(a.substring(a.indexOf("?")+1));
+    
+//    console.log(b);
 
     for (i = 0;i<data.length;i++)
         {
@@ -18,7 +25,7 @@ p.then((res)=>{
             }
         }
 //     console.log(selected.ingredient[0])
-    var components = []
+//    var components = []
 
     for (j=0;j<num_of_ingre;j++){
 //        console.log(selected.ingredient[j]);
@@ -26,26 +33,136 @@ p.then((res)=>{
         tmpObj.title = selected.ingredient[j].name;
         tmpObj.value = selected.ingredient[j].portion;
         tmpObj.color = selected.ingredient[j].color;
+        tmpObj.label = selected.ingredient[j].label;
+        tmpObj.url = selected.ingredient[j].url;
         components.push(tmpObj)
     }
     console.log(components)
+
+
+// output data  
     
+    listIngredient=function(){
+        var ingredientList = [];
+        for (var i in components){
+            var item = components[i];
+            var itemCopy = {};
+            for (var j in item){
+                itemCopy[j] = item[j];
+            }
+            ingredientList.push(itemCopy);
+        }
+        return ingredientList;
+        
+    }
+    
+            var ingredientArray = listIngredient();
+    
+//            $( "#ingredient-part" ).append( selected.ck_img );
+            console.log('<img src="'+selected.ck_img+'"/>')
+            $( "#picture-part" ).append('<img src="'+selected.ck_img+'" />');
+            for(var i = 0; i < ingredientArray.length; i++){
+            $("#show-ingredient").append
+            ("<li><p>" + 
+             
+             '<img src="'+ingredientArray[i].url+'" />'
+              + "       "
+              + ingredientArray[i].title + "   " + ingredientArray[i].value + "%" + "</p></li>" 
+            + "<br>");   
+        }
+
+    
+    
+
     $(function(){
   $("#doughnutChart").drawDoughnutChart(components);
 });
-    
-    
-    
+        
+//    console.log("hey");
+//    
+//    
+//    var components2 = [];
+//    components2["ingredient1"] = 20;
+//    components2["ingredient2"] = 20;
+//    components2["ingredient3"] = 60;
+//    
+//    
+//    var donutData = d3.pie()
+//                        .sort(null)
+//                        .value(function(d) {
+////                            console.log(d.value);
+//////                            return +d[value];
+////                            return 10;
+//                            console.log(d.value);
+////                            return +d[value];
+//                            return 1;
+//                        })
+//    
+//    var donutPath = d3.arc()
+//                        .outerRadius(50)
+//                        .innerRadius(20);
+//    
+//    var donutArc = d3.select("#doughnutChart")
+//                        .select("svg");
+//    
+////    console.log(donutArc);
+//    
+//        donutArc.selectAll(".arc")
+//                .data(donutData(d3.entries(components2)))
+//                .enter()
+//                .append("g")
+//                .attr("transform", "translate(" + 150 + ", " + 250 + ")")
+//                .attr("class", "arc");
+////                .attr("id", "test");
+//    
+////        donutArc.merge(donutArc);
+//        donutArc = donutArc.enter()
+//            .append("g")
+//            .attr("class", "arc")
+//                .merge(donutArc);
+//        
+//        donutArc.exit().remove();
+//    
+//        donutArc.append("path")
+//                .attr("d", donutPath)
+//                .style("fill", function(d, i) {
+//            return "#FF4444";
+//        })
+//        .attr("id", "test");
+//    
+//    
+//    var donutLabel = d3.arc()
+//                        .outerRadius(50 +10)
+//                        .innerRadius(20 +10);
+//
+////    var donutLabelText = d3.select("#doughnutChart")
+////                        .select("svg")
+////                        .append("g");
+//        donutLabelText = donutArc;
+//
+//        donutLabelText.selectAll("text")
+//                        .data((components2))
+//                        .enter()
+//                        .append("text")
+//                        .attr("transform", function(d, i) {
+//            console.log(d.value);
+//                            return "translate(" + donutLabel.centroid() + ")";
+//                        })
+//                        .attr("dy", "0.35em")
+//                        .text(function(d) {
+//                            console.log("-- " + d);
+//                            console.log(components);
+//                            return d.label;
+//                        });
+//
+//    donutLabelText.exit().remove();
        }
       )
 
 
 
-//$(function(){
-//  $("#doughnutChart").drawDoughnutChart(components);
-//});
-
 ;(function($, undefined) {
+  
   $.fn.drawDoughnutChart = function(data, options) {
     var $this = this,
       W = $this.width(),
@@ -153,6 +270,18 @@ p.then((res)=>{
         .on("mouseenter", pathMouseEnter)
         .on("mouseleave", pathMouseLeave)
         .on("mousemove", pathMouseMove);
+        
+//        textElems[i] = document.createElement('text')
+//        .attr({
+////          "stroke-width": settings.segmentStrokeWidth,
+////          "stroke": settings.segmentStrokeColor,
+////          "fill": data[i].color,
+//          "data-order": i
+//        })
+//        .appendTo($pathGroup)
+//        .on("mouseenter", pathMouseEnter)
+//        .on("mouseleave", pathMouseLeave)
+//        .on("mousemove", pathMouseMove);
     }
 
     //Animation start
@@ -160,12 +289,13 @@ p.then((res)=>{
 
     //Functions
     function getHollowCirclePath(doughnutRadius, cutoutRadius) {
+        
         //Calculate values for the path.
         //We needn't calculate startRadius, segmentAngle and endRadius, because base doughnut doesn't animate.
         var startRadius = -1.570,// -Math.PI/2
             segmentAngle = 6.2831,// 1 * ((99.9999/100) * (PI*2)),
             endRadius = 4.7131,// startRadius + segmentAngle
-            startX = centerX + cos(startRadius) * doughnutRadius,
+            startX = centerX + cos(startRadius) * doughnutRadius ,
             startY = centerY + sin(startRadius) * doughnutRadius,
             endX2 = centerX + cos(startRadius) * cutoutRadius,
             endY2 = centerY + sin(startRadius) * cutoutRadius,
@@ -201,6 +331,7 @@ p.then((res)=>{
       });
     }
     function drawPieSegments (animationDecimal) {
+        
       var startRadius = -PI / 2,//-90 degree
           rotateAnimation = 1;
       if (settings.animation && settings.animateRotate) rotateAnimation = animationDecimal;//count up between0~1
@@ -212,9 +343,11 @@ p.then((res)=>{
       //If data have only one value, we draw hollow circle(#1).
       if (data.length === 1 && (4.7122 < (rotateAnimation * ((data[0].value / segmentTotal) * (PI * 2)) + startRadius))) {
         $paths[0].attr("d", getHollowCirclePath(doughnutRadius, cutoutRadius));
+//        textElems[0].attr("d", getHollowCirclePath(doughnutRadius, cutoutRadius));
         return;
       }
       for (var i = 0, len = data.length; i < len; i++) {
+          
         var segmentAngle = rotateAnimation * ((data[i].value / segmentTotal) * (PI * 2)),
             endRadius = startRadius + segmentAngle,
             largeArc = ((endRadius - startRadius) % (PI * 2)) > PI ? 1 : 0,
@@ -226,6 +359,7 @@ p.then((res)=>{
             endY = centerY + sin(endRadius) * doughnutRadius,
             startX2 = centerX + cos(endRadius) * cutoutRadius,
             startY2 = centerY + sin(endRadius) * cutoutRadius;
+            
         var cmd = [
           'M', startX, startY,//Move pointer
           'A', doughnutRadius, doughnutRadius, 0, largeArc, 1, endX, endY,//Draw outer arc path
@@ -234,18 +368,25 @@ p.then((res)=>{
           'Z'//Cloth path
         ];
         $paths[i].attr("d", cmd.join(' '));
+          
         startRadius += segmentAngle;
       }
+            
+       
     }
+      
+      
     function drawDoughnutText(animationDecimal, segmentTotal) {
       $summaryNumber
         .css({opacity: animationDecimal})
         .text((segmentTotal * animationDecimal).toFixed(1));
     }
     function animateFrame(cnt, drawData) {
+
       var easeAdjustedAnimationPercent =(settings.animation)? CapValue(easingFunction(cnt), null, 0) : 1;
       drawData(easeAdjustedAnimationPercent);
     }
+      
     function animationLoop(drawData) {
       var animFrameAmount = (settings.animation)? 1 / CapValue(settings.animationSteps, Number.MAX_VALUE, 1) : 1,
           cnt =(settings.animation)? 0 : 1;
@@ -259,6 +400,7 @@ p.then((res)=>{
           }
       });
     }
+      
     function Max(arr) {
       return Math.max.apply(null, arr);
     }
