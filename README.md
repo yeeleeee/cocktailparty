@@ -10,7 +10,7 @@ There were many static cocktail information visualization pieces, but we wanted 
 
 
 ## Deployment
-Here is our [website](https://yeeleeee.github.io/cocktailparty/).
+Here is our [website](http://cocktailparty.s3-website.us-east-2.amazonaws.com/).
 Here is our [slide deck](https://docs.google.com/presentation/d/1t4D9fejhUf4eAOv73IeblzctNWuIp-CjsADY3CIkiBU/edit?usp=sharing)for more information.
 
 ### Some screenshots
