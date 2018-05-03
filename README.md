@@ -10,8 +10,9 @@ There were many static cocktail information visualization pieces, but we wanted 
 
 
 ## Deployment
-Here is our [website](http://cocktailparty.s3-website.us-east-2.amazonaws.com/).
-Here is our [slide deck](https://docs.google.com/presentation/d/1t4D9fejhUf4eAOv73IeblzctNWuIp-CjsADY3CIkiBU/edit?usp=sharing)for more information.
+* Here is our [website](http://cocktailparty.s3-website.us-east-2.amazonaws.com/).
+* Here is our [slide deck](https://docs.google.com/presentation/d/1t4D9fejhUf4eAOv73IeblzctNWuIp-CjsADY3CIkiBU/edit?usp=sharing)for more information.
+* Also a [video](https://vimeo.com/267731200). Password: 8888.
 
 ### Some screenshots
 
