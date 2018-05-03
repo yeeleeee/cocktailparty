@@ -1,5 +1,5 @@
 require.config({
-	baseUrl: "../dist",
+	baseUrl: "../js",
 	paths: {
 		'skrollr' : "skrollr.min"
 	},
