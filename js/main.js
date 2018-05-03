@@ -14,7 +14,7 @@ function findDrink(name)
 //    var a = location.href;
 //    var b = decodeURI(a.substring(a.indexOf("?")+1));
 //    window.location = "/donut.html?" + encodeURI(name);
-    window.open ("http://127.0.0.1:49253/donut.html?" + encodeURI(name));
+    window.open ("http://127.0.0.1:55497/donut.html?" + encodeURI(name));
 }
 
 

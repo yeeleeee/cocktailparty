@@ -407,7 +407,7 @@ function findDrink(name)
 //    var a = location.href;
 //    var b = decodeURI(a.substring(a.indexOf("?")+1));
 //    window.location = "/donut.html?" + encodeURI(name);
-    return "http://127.0.0.1:49253/donutchartworking/donut.html?" + encodeURI(name);
+    return "http://127.0.0.1:49253/donut.html?" + encodeURI(name);
 }
 
 var linkbtn = d3.select("#linkbtn")
@@ -488,7 +488,7 @@ d3.select ("#filter_submit").on("click", function(){
                     .attr('y', ini_posimg[1])
                     .attr('width', size_img[0])
                     .attr('height', size_img[1])
-                    .attr("xlink:href", "cocktails/"+ crt_cocktail+".png")
+                    .attr("xlink:href", "cocktail/"+ crt_cocktail+".png")
                     .style("opacity",0.0)
                     .transition() // needs a little bit more animation here
                         .ease(easement)
@@ -628,7 +628,7 @@ d3.select ("#filter_submit").on("click", function(){
                     // change image link
                     crtimg.transition()
                           .delay(1000)
-                          .attr("xlink:href", "cocktails/"+ crt_cocktail+".png")
+                          .attr("xlink:href", "cocktail/"+ crt_cocktail+".png")
                     
 
                     // change text
